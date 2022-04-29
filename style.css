@@ -5,13 +5,72 @@
 
 
 main{
-	background: black;
+	background: white;
 	width: 100%;
 	height: 100vh;
-	display: flex;
-  	flex-flow: wrap;
+	display: inline-block;
+  	/*flex-flow: wrap;*/
 }
 
-button {
-  
+.resultado{
+	background: grey;
+	border: none;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 1fr 3fr; 
+	row-gap: 10px;
+	grid-column-gap: 15px;
+	/*grid-auto-rows: minmax(100px, auto);*/
+
+}
+
+.resultado button{
+	background: yellow;
+	color: black;
+	border: 1px solid black;
+	padding: 20px;
+	border-radius: 5px;
+	font-size: 22px;
+}
+
+.resultado input{
+	background: blue;
+	color: white;
+	border: 1px solid black;
+	padding: 20px;
+	border-radius: 5px;
+	text-align: right;
+	font-size: 30px;
+}
+
+.box-botones{
+	background: grey;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	row-gap: 10px;
+	grid-column-gap: 15px;
+	grid-auto-rows: minmax(100px, auto);
+}
+
+.box-botones button{
+	border: 1px solid black;
+	padding: 20px;
+	border-radius: 5px;
+	font-size: 22px;
+}
+
+.box-botones .boton{
+	background: blue;
+	color: white;
+}
+
+.box-botones .boton-operacion{
+	background: yellow;
+	color: black;
+}
+
+.box-botones .boton-igual{
+	background: green;
+	color: white;
 }
